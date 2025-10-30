@@ -39,7 +39,6 @@ function App() {
     <div>
       <h1>Nugget's super simple to-do app</h1>
       <div className='input-new-todo'> 
-      {/*refactor exercise for code organization*/}
         <input 
           type="text"
           value={newTodo}
