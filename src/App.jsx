@@ -53,7 +53,7 @@ export default function App() {
           />
         ))}
       </div>
-      <p className="read-the-docs">
+      <p>
         What are some things Nugget should do today??
       </p>
     </div>
