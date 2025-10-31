@@ -11,8 +11,8 @@ To successfully complete the exercises in the workshop, you will need the follow
 - Have an AI chatbot of your choice to code with (can be an extension)
 
 Run the following commands once you have the repository on your IDE!
-```npm create vite@latest ./```
+`npm create vite@latest ./`
 select JavaScript React 
 
 to run the file: 
-```npm run dev```
+`npm run dev`
