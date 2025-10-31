@@ -3,15 +3,7 @@ import '../App.css';
 
 export default function ToDoItem({ todo, onToggle, onDelete }) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '5%',
-        borderBottom: '1px solid #ccc',
-      }}
-    >
+    <div className='to-do-item'>
       <div
         onClick={() => onToggle(todo.id)}
         style={{
