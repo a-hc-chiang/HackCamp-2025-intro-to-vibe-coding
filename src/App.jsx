@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-// import bg from './assets/background-image.png';
+import NewToDoInput from './components/InputToDo';
 import TodoItem from './components/ToDoItem';
 
-function App() {
+export default function App() {
   const [todos, setTodos] = useState([
     { id: 1, text: 'Learn AI toolz', completed: false },
     { id: 2, text: 'Build an app wit AI toolz', completed: false },
@@ -38,19 +38,11 @@ function App() {
   return (
     <div>
       <h1>Nugget's super simple to-do app</h1>
-      <div className='input-new-todo'> 
-        <input 
-          type="text"
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-          placeholder="Add a new task for Nugget..."
-        >
-          
-        </input>
-        <button onClick={addTodo}>Add</button>
-      </div>
-
-      
+      <NewToDoInput
+        newTodo={newTodo}
+        setNewTodo={setNewTodo}
+        addTodo={addTodo}
+      /> 
       <div className="todo-container">
         {todos.map((todo) => (
           <TodoItem
@@ -61,13 +53,9 @@ function App() {
           />
         ))}
       </div>
-
-
       <p className="read-the-docs">
         What are some things Nugget should do today??
       </p>
     </div>
   );
 }
-
-export default App;
