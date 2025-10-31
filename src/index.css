@@ -46,7 +46,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
   outline: none;
-  border-color: rgb(255, 137, 59);
   box-shadow: none;
 }
 
