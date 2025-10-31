@@ -8,7 +8,7 @@ To successfully complete the exercises in the workshop, you will need the follow
 - Install Node 20.19+, 22.12+
 - Have Git installed on your IDE of choice
 - Have some coding experience in any language!
-- Have an AI agent of your choice to code with (can be an extension)
+- Have an AI chatbot of your choice to code with (can be an extension)
 
 Run the following commands once you have the repository on your IDE!
 ```npm create vite@latest ./```
