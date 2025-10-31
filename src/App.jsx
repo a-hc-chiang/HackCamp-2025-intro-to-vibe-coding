@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-// import bg from './assets/background-image.png';
 import TodoItem from './components/ToDoItem';
 
-function App() {
+export default function App() {
   const [todos, setTodos] = useState([
     { id: 1, text: 'Learn AI toolz', completed: false },
     { id: 2, text: 'Build an app wit AI toolz', completed: false },
@@ -69,5 +68,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
