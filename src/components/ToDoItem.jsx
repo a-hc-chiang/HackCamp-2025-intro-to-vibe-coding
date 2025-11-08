@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import '../App.css';
 
 export default function ToDoItem({ todo, onToggle, onDelete, onEdit }) {

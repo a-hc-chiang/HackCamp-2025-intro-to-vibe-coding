@@ -43,7 +43,7 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className='to-do-app-container'>
       <h1>Nugget's super simple to-do app</h1>
       <div className="input-new-todo">
         <input
