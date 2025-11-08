@@ -12,6 +12,12 @@
   padding: 3%;
 }
 
+.to-do-item-buttons {
+  display: flex;
+  gap: 0.2rem;
+}
+
+
 .input-new-todo {
   padding: 5%;
   align-items: center;

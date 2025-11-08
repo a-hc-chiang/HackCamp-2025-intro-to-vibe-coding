@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../App.css';
 
 export default function ToDoItem({ todo, onToggle, onDelete, onEdit }) {
@@ -22,7 +22,7 @@ export default function ToDoItem({ todo, onToggle, onDelete, onEdit }) {
             value={editText}
             onChange={(e) => setEditText(e.target.value)}
           />
-          <div>
+          <div className='to-do-item-buttons'>
           <button onClick={handleSave}>Save</button>
           <button onClick={() => setIsEditing(false)}>Cancel</button>
           </div>
