@@ -45,7 +45,6 @@ export default function App() {
   return (
     <div>
       <h1>Nugget's super simple to-do app</h1>
-
       <div className="input-new-todo">
         <input
           type="text"
@@ -55,7 +54,6 @@ export default function App() {
         />
         <button onClick={addTodo}>Add</button>
       </div>
-
       <div className="todo-container">
         {todos.map((todo) => (
           <TodoItem
@@ -67,7 +65,6 @@ export default function App() {
           />
         ))}
       </div>
-
       <p>
         What are some things Nugget should do today??
       </p>

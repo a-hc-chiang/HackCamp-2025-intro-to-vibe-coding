@@ -14,4 +14,6 @@
 
 .input-new-todo {
   padding: 5%;
+  align-items: center;
+  padding: 3%;
 }
