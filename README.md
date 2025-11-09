@@ -5,7 +5,6 @@ Hello! Welcome to the Intro to Vibe Coding workshop :) This repository contains 
 ## Pre-requsites 
 To successfully complete the exercises in the workshop, you will need the following things (more details in the Notion Page):
 
-- Install Node 20.19+, 22.12+
 - Have Git installed on your IDE of choice
 - Have some coding experience in any language!
 - Have an AI chatbot of your choice to code with (can be an Visual Studio Code extension)
