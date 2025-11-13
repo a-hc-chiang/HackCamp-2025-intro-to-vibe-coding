@@ -21,9 +21,9 @@ export default function App() {
     setTodos(todos.filter((t) => t.id !== id));
   };
 
-    const addTodo = () => {
+  const addTodo = () => {
     const trimmed = newTodo.trim();
-    if (trimmed === '') return; 
+    if (trimmed === '') return;
 
     const newItem = {
       id: Date.now(),
@@ -34,22 +34,26 @@ export default function App() {
     setNewTodo('');
   };
 
+  const editTodo = (id, newText) => {
+    setTodos(
+      todos.map((t) =>
+        t.id === id ? { ...t, text: newText } : t
+      )
+    );
+  };
+
   return (
-    <div>
+    <div className='to-do-app-container'>
       <h1>Nugget's super simple to-do app</h1>
-      <div className='input-new-todo'> 
-        <input 
+      <div className="input-new-todo">
+        <input
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
           placeholder="Add a new task for Nugget..."
-        >
-          
-        </input>
+        />
         <button onClick={addTodo}>Add</button>
       </div>
-
-      
       <div className="todo-container">
         {todos.map((todo) => (
           <TodoItem
@@ -57,11 +61,11 @@ export default function App() {
             todo={todo}
             onToggle={toggleTodo}
             onDelete={deleteTodo}
+            onEdit={editTodo}
           />
         ))}
       </div>
-
-      <p className="read-the-docs">
+      <p>
         What are some things Nugget should do today??
       </p>
     </div>

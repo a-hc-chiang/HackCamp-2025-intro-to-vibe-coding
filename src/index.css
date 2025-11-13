@@ -5,7 +5,11 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background: linear-gradient(to bottom, #cedfa2, #8e9565); 
+  background-image: url('./assets/background-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

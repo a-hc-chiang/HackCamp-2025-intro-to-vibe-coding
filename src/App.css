@@ -8,6 +8,17 @@
 .to-do-item {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 3%;
+}
+
+.to-do-item-buttons {
+  display: flex;
+}
+
+
+.input-new-todo {
+  padding: 5%;
   align-items: center;
   padding: 3%;
 }
