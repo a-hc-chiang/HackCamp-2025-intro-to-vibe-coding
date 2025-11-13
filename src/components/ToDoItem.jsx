@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../App.css';
 
 export default function ToDoItem({ todo, onToggle, onDelete, onEdit }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -43,7 +42,7 @@ export default function ToDoItem({ todo, onToggle, onDelete, onEdit }) {
             <button onClick={() => onDelete(todo.id)}>Delete</button>
           </div>
         </>
-      )}
     </div>
+    <div></div>
   );
 }
