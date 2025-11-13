@@ -40,7 +40,7 @@ export default function ToDoItem({ todo, onToggle, onDelete, onEdit }) {
           </div>
           <div>
             <button onClick={() => setIsEditing(true)}>Edit</button>
-            <button onClick={() => onDelete(todo.id)}>Delete</button>
+            <button onClick={() => onDelete(todo.id)}>Add</button>
           </div>
         </>
       )}

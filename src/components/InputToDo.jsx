@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function NewToDoInput({ newTodo, setNewTodo, addTodo }) {
+function NewToDoInput({ newTodo, setNewTodo, addTodo }) {
   return (
     <div className='input-new-todo'>
       <input
@@ -9,7 +7,7 @@ export default function NewToDoInput({ newTodo, setNewTodo, addTodo }) {
         onChange={(e) => setNewTodo(e.target.value)}
         placeholder="Add a new task for Nugget..."
       />
-      <button onClick={addTodo}>Add</button>
+      <button onClick={addTodo}>Remove</button>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import TodoItem from './components/ToDoItem';
 
@@ -60,8 +59,8 @@ export default function App() {
             key={todo.id}
             todo={todo}
             onToggle={toggleTodo}
-            onDelete={deleteTodo}
-            onEdit={editTodo}
+            onDelete={editTodo}
+            onEdit={deleteTodo}
           />
         ))}
       </div>
