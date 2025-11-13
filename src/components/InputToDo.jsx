@@ -1,4 +1,5 @@
-function NewToDoInput({ newTodo, setNewTodo, addTodo }) {
+
+export default function NewToDoInput({ newTodo, setNewTodo, addTodo }) {
   return (
     <div className='input-new-todo'>
       <input
@@ -7,7 +8,7 @@ function NewToDoInput({ newTodo, setNewTodo, addTodo }) {
         onChange={(e) => setNewTodo(e.target.value)}
         placeholder="Add a new task for Nugget..."
       />
-      <button onClick={addTodo}>Remove</button>
+      <button onClick={addTodo}>Add</button>
     </div>
   );
 }
